@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: left;
+    padding: 32px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>MasksOn</h1>
+
+<p>I was asked to work on the <a href=https://maskson.org><strong>MasksOn</strong></a> project at the start of the pandemic. The project's goal was to make PPE utilizing the standard ISO port that many medical filters follow and make an adaptor to snorkel masks.</p>
+  <ul>
+    <li>Lead design reviews to ensure a safe and reliable product from ideation to production in three weeks</li>
+    <li>Enforced responsible PDM practices early for ease of traceability in medical board reviews</li>
+    <li>Fulfilled early demand with surgical-grade 3D printed SLA-parts from Formlabs while working with Protolabs</li>
+    <li>Established and fortified supply chain to scale from 500 to 1500 manufactured units per day</li>
+    <li>Designed and implemented final assembly test fixtures to ensure safety of units</li>
+    <li>Transitioned product from design to manufacturing in Haverhill, MA factory utilizing the principles of Lean Six Sigma</li>
+  </ul>
+</div>
+<div>
+  <ul>
+    <li>Designs started with an adapter that press fit into the channels in the snorkel masks. This design utilized the preexisting pathing for resperation; outter channels for exhalation, innter channel for inhalation. Independent channels also meant a lower work of breath as well as less fogging due to moisture. This design was abandoned due to:</li>
+      <ul>
+        <li>It was designed with a DFM of 3D printing, but our demand numbers called for injection molding. This geometry required sideactions and was too expensive</li>
+        <li>The EPDM rubber for the valve was too prone to either installing upsidedown. The material came on a roll in bulk and would curl lasercut. This made sealing near impossible.</li>
+        <li>Getting a dimensional accuracy across the print bed of Form 2 printers combined with nominal geometry of the snorkel masks made the press fit and sealing on installtion very inconsistent</li>
+      </ul>
+  </ul>
+    <ul>
+      <li>The second design Utilized the geometry of the OEM snorkle tube and used the OEM oring on the masks. The image is representative but is not the part that shipped.</li>
+    </ul>
+</div>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="col-md-6">
+    <img src="internalAdapter.jpeg" style="width:50%">
+  </div>
+  <div class="col-md-6">
+    <img src="externalAdapter.jpeg" style="width:50%">
+  </div>
+</div>
+
+</body>
+</html>
